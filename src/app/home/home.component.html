@@ -1,0 +1,300 @@
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg bg-white">
+    <div class="container">
+  
+      <a href="#" class="navbar-brand text-large font-weight-bolder line-height-1 py-3">
+          <img src="assets/img/da-logo.png" style="width: 105px;" alt="" title="" />
+      </a>
+  
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#header-3">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="header-3">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link active" href="#">Home</a>
+          <a class="nav-item nav-link" href="#">Services</a>
+          <a class="nav-item nav-link" href="#">App</a>
+          <a class="nav-item nav-link" href="#">Contact&nbsp;Us</a>
+        </div>
+      </div>
+  
+    </div>
+</nav>
+
+<!-- Jumbo -->
+<div class="jumbotron ui-hero ui-mh-100vh ui-bg-overlay-container ui-bg-video-container text-white">
+        <div class="ui-bg-video">
+          <video preload="true" autoplay="true" loop="true">
+            <source src="https://uxpowered.com/products/appwork/v140/uikit/assets/video/video.mp4?1">
+          </video>
+        </div>
+        <div class="ui-bg-overlay bg-dark opacity-50"></div>
+        <div class="container my-5">
+          <div class="row">
+      
+            <div class="col-md-8 col-lg-6 col-xl-5 text-md-left text-center">
+              <h1 class="display-2">Providing Quality Services Since ’11</h1>
+              <p class="lead opacity-75 pb-2 my-4">
+                We endevour to deliver software solutions that bring your organisation closer to achieving its objectives and overall bottom line.
+              </p>
+              <a href="#" class="btn btn-lg btn-outline-white text-expanded">Learn More</a>
+              &nbsp;
+              <a href="#" class="btn btn-lg btn-success text-expanded">Join Us</a>
+            </div>
+      
+          </div>
+        </div>
+</div>
+
+<!-- Services -->
+<div class="container"><br><br>
+<h1 class="display-4 text-center mb-5">Our Services</h1>
+
+<div class="row text-center">
+  <div class="col-md-4 my-4">
+    <div class="display-4 text-secondary mx-auto mb-4">
+      <span class="lnr lnr-star"></span>
+    </div>
+    <h5>Website Development</h5>
+    <div class="ui-company-text text-muted">
+      Lorem ipsum dolor sit amet, ius virtute suscipit te. Ius prima
+      euismod consequat eu, cu quo alii scriptorem
+    </div>
+  </div>
+  <div class="col-md-4 my-4">
+    <div class="display-4 text-secondary mx-auto mb-4">
+      <span class="lnr lnr-picture"></span>
+    </div>
+    <h5>Mobile Development</h5>
+    <div class="ui-company-text text-muted">
+      Etiam vivendo eu sea, purto ponderum mediocritatem at pro. Ex
+      tantas invenire dissentiunt mea.
+    </div>
+  </div>
+  <div class="col-md-4 my-4">
+    <div class="display-4 text-secondary mx-auto mb-4">
+      <span class="lnr lnr-calendar-full"></span>
+    </div>
+    <h5>Software Development</h5>
+    <div class="ui-company-text text-muted">
+      Iuvaret deleniti vulputate nec ne, id vix lucilius legendos
+      deseruisse, harum honestatis cum te.
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Newsletter -->
+<div class="uikit-company-example">
+                <div [formGroup]="newsletterForm">
+                  <div class="uikit-example">
+          
+                    <div class="jumbotron bg-success py-5 m-0">
+                      <div class="row align-items-center">
+                        <div class="col-md-5 col-lg-4 text-xlarge font-weight-light">
+                          Join Our Newsletter
+                        </div>
+                        <div class="col-md-7 col-lg-8 mt-3 mt-md-0">
+                          <div class="input-group">
+                            <input type="email" name="email" formControlName="email" class="form-control form-control-lg border-0" placeholder="E-mail">
+                            <span class="input-group-append">
+                              <button type="button" class="btn btn-dark btn-lg" (click)="requestNewsletter()">Get Started</button>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+          
+                  </div>
+                </div>
+</div>
+<!-- Apps -->
+<div class="container"><br><br>
+    <h1 class="display-4 text-center mb-5">Our Apps</h1>
+    <div class="row align-items-center">
+
+            <div class="col-md-8 col-xl-6 text-md-left text-center">
+              <h1 class="display-4 mb-4">National ID Print Ready</h1>
+              <p class="ui-company-text text-muted my-5">
+                Lorem ipsum dolor sit amet, ad eam consul vituperata. Cum
+                assum inimicus an, his ne liber aeterno debitis. Te his iudico
+                tollit efficiendi. Eu harum volumus pri, oporteat probatus
+                disputationi id his. Mei in vidit mollis mediocrem, cum ad
+                suas democritum, ea eos eligendi nominati volutpat.
+              </p>
+              <a href="" class="btn btn-lg btn-dark text-transform-none text-left m-3">
+                    <span class="media align-items-center">
+                      <img width="25" class="d-block" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAoCAYAAABw65OnAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAWJJREFUeNrE2OENgjAQBWB0AkZwBEZwBDfRDWQD3UA30A10BJ1ANmidoF4Tm5Cmvd7Vu9rkxQj8+AI8KO2ccx1kgEyQ7fd/0wRA+LWQ22xbM4RJQPzYt0Q4BPKCrFshMIgfB0jfAlGC+H2bFogSxI8LZKWNoECMZJ1zCArESdUZQ1Ahoc69FoIDqa4zBcGB+HHinhUqggth1ZmD4ELCjbuSRnAhltKeGgQVYqNjsnWuRZQgMcBgdf4FkYNggGSdf0WkICWAi97OIogYQgWEMSw7mbEgbksPgbNgkctReo4cJS5H6iak1HeSujGxFmCQUaqilBrGkLvkw8oyamgoj21uO96QNeQBGSA3SI8c/4RYyXZwzoDVeJVzAGeNSQ0VMGlN76iAUWu2TQHcNaf8JYDfv9P8+CkBrtqfgRiAVbtaBAY4tlgayAGqa8dF5ACj+9PCmZGqHRcxX0LcuT8sIX4EGACCwMmlMqgohQAAAABJRU5ErkJggg==">
+                      <span class="media-body d-block flex-basis-auto ml-3">
+                        <small class="font-weight-light">GET IT ON</small><br>
+                        <strong class="text-big line-height-1">Google Play</strong>
+                      </span>
+                    </span>
+                  </a>
+            </div>
+          
+            <div class="col-md-4 col-xl-6 mt-5 mt-md-0">
+              <div class="ui-device iphone mw-100 mx-auto" style="width: 230px;">
+                <div class="device-content">
+                  <img src="https://uxpowered.com/products/appwork/v140/assets_/img/uikit/app-phone.png" alt>
+                </div>
+                <img class="device-img" src="https://uxpowered.com/products/appwork/v140/assets_/img/devices/iphone.png" alt>
+              </div>
+            </div>
+          
+          </div>
+</div>
+<div class="overflow-hidden">
+        <div class="container">
+      
+          <div class="row align-items-center">
+      
+            <div class="col-lg-6 col-xl-5">
+              <div class="ui-presentation-left ui-device macbook float-right">
+                <img class="device-img" src="https://uxpowered.com/products/appwork/v140/assets_/img/devices/macbook-silver.png" alt>
+                <div class="device-content">
+                  <img src="https://uxpowered.com/products/appwork/v140/assets_/img/uikit/app.png" alt>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-lg-6 text-lg-left text-center mx-auto mt-5 mt-lg-0">
+              <h1 class="display-4 mb-4">SmartBulk: AutoWeigh</h1>
+              <p class="ui-company-text text-muted my-5">
+                Lorem ipsum dolor sit amet, ad eam consul vituperata. Cum
+                assum inimicus an, his ne liber aeterno debitis. Te his iudico
+                tollit efficiendi. Eu harum volumus pri, oporteat probatus
+                disputationi id his. Mei in vidit mollis mediocrem, cum ad
+                suas democritum, ea eos eligendi nominati volutpat.
+              </p>
+              <a href="#" class="btn rounded-pill btn-default md-btn-flat">Learn More →</a>
+            </div>
+      
+          </div>
+        </div>
+</div>
+<br><br>
+<!-- Request Demo -->
+<div class="uikit-company-example">
+
+        <div class="bg-success text-white py-5">
+          <div class="container">
+            <div class="col-md-10 col-lg-8 col-xl-7 text-center p-0 pt-3 mx-auto">
+              <h1 class="display-4 mb-3">Request for a Demo</h1>
+              <div class="lead opacity-75 mb-4">
+                Lorem ipsum dolor sit amet, ad eam consul vituperata. Cum assum inimicus
+                an, his ne liber aeterno debitis. Te his iudico tollit efficiendi.
+              </div>
+            </div>
+  
+            <div [formGroup]="demoForm"  class="form-row pb-3">
+              <div class="col-md mt-2">
+                <input type="text" name="name" formControlName="name" class="form-control form-control-lg form-control-inverted" placeholder="Organisation name">
+              </div>
+              <div class="col-md mt-2">
+                <input type="email" name="email" formControlName="email" class="form-control form-control-lg form-control-inverted" placeholder="E-mail">
+              </div>
+              <div class="col-md-2 col-lg-2 col-lg-2 mt-2">
+                <button type="button" class="btn btn-outline-white btn-lg btn-block px-0" (click)="requestDemo()">Sign Up</button>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+</div>
+
+<!-- Contact Page -->
+<br><br>
+<div class="container">
+<h1 class="display-4 text-center pb-4 mb-5">Contacts</h1>
+
+<div class="row">
+  <div class="col-lg-6">
+
+    <div class="media align-items-center">
+      <div class="ui-icon border-0 text-large">&nbsp;</div>
+      <div class="media-body ml-2">
+        <h5 class="m-0">Our contacts</h5>
+      </div>
+    </div>
+
+    <div class="media">
+      <div class="ion ion-ios-call ui-icon border-0 text-lightest text-large"></div>
+      <div class="media-body pt-2 ml-2">
+
+        <div class="ui-company-text mb-2">+254 (768) 821 987</div>
+      </div>
+    </div>
+
+    <div class="media align-items-center">
+      <div class="ion ion-ios-mail ui-icon border-0 text-lightest text-large"></div>
+      <div class="media-body ml-2">
+        <a href="mailto:support@digitalatelier.co.ke" class="ui-company-text text-body">support@digitalatelier.co.ke</a>
+      </div>
+    </div>
+
+    <div class="media align-items-center mt-3">
+      <div class="ui-icon border-0 text-lightest text-large">&nbsp;</div>
+      <div class="media-body ml-2">
+        <h5 class="m-0">Our location</h5>
+      </div>
+    </div>
+
+    <div class="media">
+      <div class="ion ion-ios-navigate ui-icon border-0 text-lightest text-large"></div>
+      <div class="media-body pt-2 ml-2">
+
+        <div class="ui-company-text">
+          Greenspan Housing<br>
+          Mara Court, Suite A6
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <hr class="d-lg-none w-100 my-5">
+
+  <div class="col-lg-6" [formGroup]="contactForm">
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label class="form-label">Your name</label>
+        <input type="text" name="name" class="form-control" name="name" formControlName="name">
+      </div>
+      <div class="form-group col-md-6">
+        <label class="form-label">Email address</label>
+        <input type="email" name="email" class="form-control" name="email" formControlName="email">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label">Message</label>
+      <textarea rows="6" name="message" class="form-control" name="message" formControlName="message"></textarea>
+    </div>
+    <button type="button" class="btn btn-primary" (click)="send()">Send Message</button>
+</div>
+</div>
+</div>
+<br><br>
+
+<!-- Footer -->
+<nav class="footer bg-white py-2">
+        <div class="container text-center py-4">
+          <div class="pb-3">
+            <a href="#" class="footer-text text-large font-weight-bolder">
+                    <img src="assets/img/da-logo.png" style="width: 105px;" alt="" title="" />
+            </a>
+          </div>
+          <hr class="my-1">
+          <div class="pb-3">
+            <a href="#" class="footer-link pt-3">About Us</a>
+            <a href="#" class="footer-link pt-3 ml-4">Help</a>
+            <a href="#" class="footer-link pt-3 ml-4">Contact</a>
+            <a href="#" class="footer-link pt-3 ml-4">Terms &amp; Conditions</a>
+          </div>
+      
+          <div class="col-md-9 col-lg-7 col-xl-6 px-0 mx-auto mt-3">
+            2020
+          </div>
+        </div>
+</nav>
