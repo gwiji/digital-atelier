@@ -14,9 +14,8 @@ export class HomeComponent implements OnInit {
   demoForm: FormGroup;
   newsletterForm: FormGroup;
 
-  constructor(private appService: AppService,public formBuilder: FormBuilder,public db: DbService,  private title: Title,
-    private meta: Meta) {
-    this.appService.pageTitle = 'Home';
+  constructor(private appService: AppService,public formBuilder: FormBuilder,public db: DbService,  public title: Title,
+    public meta: Meta) {
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.compose([Validators.maxLength(30), Validators.minLength(4), Validators.required])],
       email: ['', Validators.compose([Validators.required, Validators.email])],
@@ -37,20 +36,18 @@ this.newsletterForm = this.formBuilder.group({
 }
 
 ngOnInit() {
-  this.title.setTitle('Digital Atelier');
-    this.meta.updateTag(
-      { name: 'twitter:card', content: 'summary' });
-      this.meta.updateTag(
-      { name: 'og:url', content: '/' });
-      this.meta.updateTag(
-      { name: 'og:title', content: 'Digital Atelier'});
-      this.meta.updateTag(
-      { name: 'og:description', content: 'Your IT Partner' });
-      this.meta.updateTag(
-      { name: 'og:image', content: '/assets/img/da-logo.png' });
+  //this.title.setTitle('Digital Atelier');
+  this.appService.pageTitle = 'Home';
+  this.meta.updateTag({name: 'title', content: 'Digital Atelier'});
+  this.meta.updateTag({property: 'og:title', content: 'Digital Atelier'});
+  this.meta.updateTag({ name: 'og:image', content: 'https://digital-atelier.web.app/assets/img/da-logo.png' });
+  this.meta.updateTag({property: 'og:image:alt', content: 'Digital Atelier Logo'});
+  this.meta.updateTag({name: 'twitter:title', content: 'Digital Atelier - We build beautiful and functional websites and mobile apps'});
+  this.meta.updateTag({name: 'twitter:image:alt', content: 'Digital Atelier'});
+  
+  
+  
 }
-
-
 
   get f(){ return this.contactForm.value}
   get g(){ return this.demoForm.value}

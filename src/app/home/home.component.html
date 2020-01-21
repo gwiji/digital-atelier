@@ -2,20 +2,20 @@
 <nav class="navbar navbar-expand-lg bg-white">
     <div class="container">
   
-      <a href="#" class="navbar-brand text-large font-weight-bolder line-height-1 py-3">
-          <img src="assets/img/da-logo.png" style="width: 105px;" alt="" title="" />
+      <a href="/" class="navbar-brand text-large font-weight-bolder line-height-1 py-3" name="navbar-brand" aria-label="logo">
+          <img src="assets/img/da-logo.png" style="width: 105px;"  alt="Logo" title="Digital Atelier Logo" />
       </a>
   
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#header-3">
+      <button class="navbar-toggler" name="navbar" type="button" data-toggle="collapse" data-target="#header-3" aria-label="menu">
         <span class="navbar-toggler-icon"></span>
       </button>
   
       <div class="collapse navbar-collapse" id="header-3">
         <div class="navbar-nav ml-auto">
-          <a class="nav-item nav-link active" href="#">Home</a>
-          <a class="nav-item nav-link" href="#">Services</a>
-          <a class="nav-item nav-link" href="#">App</a>
-          <a class="nav-item nav-link" href="#">Contact&nbsp;Us</a>
+          <a class="nav-item nav-link active" href="#" aria-label="Home">Home</a>
+          <a class="nav-item nav-link" href="#" aria-label="Services">Services</a>
+          <a class="nav-item nav-link" href="#" aria-label="Apps">Apps</a>
+          <a class="nav-item nav-link" href="#" aria-label="contact us">Contact&nbsp;Us</a>
         </div>
       </div>
   
@@ -26,21 +26,21 @@
 <div class="jumbotron ui-hero ui-mh-100vh ui-bg-overlay-container ui-bg-video-container text-white">
         <div class="ui-bg-video">
           <video preload="true" autoplay="true" loop="true">
-            <source src="https://uxpowered.com/products/appwork/v140/uikit/assets/video/video.mp4?1">
+            <source src="/assets/video/video.mp4?1">
           </video>
         </div>
         <div class="ui-bg-overlay bg-dark opacity-50"></div>
         <div class="container my-5">
           <div class="row">
       
-            <div class="col-md-8 col-lg-6 col-xl-5 text-md-left text-center">
+            <div class="col-md-8 col-lg-7 col-xl-5 text-md-left text-center">
               <h1 class="display-2">Providing Quality Services Since ’11</h1>
               <p class="lead opacity-75 pb-2 my-4">
                 We endevour to deliver software solutions that bring your organisation closer to achieving its objectives and overall bottom line.
               </p>
               <a href="#" class="btn btn-lg btn-outline-white text-expanded">Learn More</a>
               &nbsp;
-              <a href="#" class="btn btn-lg btn-success text-expanded">Join Us</a>
+              <a href="#" aria-label="free-audit" class="btn btn-lg btn-success text-expanded">Free Website Audit</a>
             </div>
       
           </div>
@@ -56,10 +56,9 @@
     <div class="display-4 text-secondary mx-auto mb-4">
       <span class="lnr lnr-star"></span>
     </div>
-    <h5>Website Development</h5>
+    <h5>Web Design & Development</h5>
     <div class="ui-company-text text-muted">
-      Lorem ipsum dolor sit amet, ius virtute suscipit te. Ius prima
-      euismod consequat eu, cu quo alii scriptorem
+      We specialise in building and maintaining website that communicate, disseminate and reinforce brand identity
     </div>
   </div>
   <div class="col-md-4 my-4">
@@ -68,8 +67,7 @@
     </div>
     <h5>Mobile Development</h5>
     <div class="ui-company-text text-muted">
-      Etiam vivendo eu sea, purto ponderum mediocritatem at pro. Ex
-      tantas invenire dissentiunt mea.
+      Our expertise in mobile develooment has enable us deliver apps both on android and apple IOS with intuitive & functional user interface.
     </div>
   </div>
   <div class="col-md-4 my-4">
@@ -78,8 +76,36 @@
     </div>
     <h5>Software Development</h5>
     <div class="ui-company-text text-muted">
-      Iuvaret deleniti vulputate nec ne, id vix lucilius legendos
-      deseruisse, harum honestatis cum te.
+      Building bespoke software solutions has been necessitated by lack of off-the-shelf software. We have broad experience in the dairy sector, service sector etc.
+    </div>
+  </div>
+</div>
+<div class="row text-center">
+  <div class="col-md-4 my-4">
+    <div class="display-4 text-secondary mx-auto mb-4">
+      <span class="lnr lnr-star"></span>
+    </div>
+    <h5>SEO</h5>
+    <div class="ui-company-text text-muted">
+      Search engine optimisation makes your website to be me visible online and especialy by search engines. Our methodology guarantees first page results
+    </div>
+  </div>
+  <div class="col-md-4 my-4">
+    <div class="display-4 text-secondary mx-auto mb-4">
+      <span class="lnr lnr-picture"></span>
+    </div>
+    <h5>ASO</h5>
+    <div class="ui-company-text text-muted">
+      Application Search Optimisation is the practice of making your application visible and rank higher in the app store. We implement best practices to ensure atmost visibility.
+    </div>
+  </div>
+  <div class="col-md-4 my-4">
+    <div class="display-4 text-secondary mx-auto mb-4">
+      <span class="lnr lnr-calendar-full"></span>
+    </div>
+    <h5>Online Marketing</h5>
+    <div class="ui-company-text text-muted">
+      It only makes sense that after you have had your online assets developed (website or mobile app), the next thing would to notify your audience as well as draw more
     </div>
   </div>
 </div>
@@ -97,9 +123,9 @@
                         </div>
                         <div class="col-md-7 col-lg-8 mt-3 mt-md-0">
                           <div class="input-group">
-                            <input type="email" name="email" formControlName="email" class="form-control form-control-lg border-0" placeholder="E-mail">
+                            <input type="email" aria-label="email" name="email" id="email" formControlName="email" class="form-control form-control-lg border-0" placeholder="E-mail">
                             <span class="input-group-append">
-                              <button type="button" class="btn btn-dark btn-lg" (click)="requestNewsletter()">Get Started</button>
+                              <button type="button" aria-label="get started" class="btn btn-dark btn-lg" (click)="requestNewsletter()">Get Started</button>
                             </span>
                           </div>
                         </div>
@@ -117,13 +143,15 @@
             <div class="col-md-8 col-xl-6 text-md-left text-center">
               <h1 class="display-4 mb-4">National ID Print Ready</h1>
               <p class="ui-company-text text-muted my-5">
-                Lorem ipsum dolor sit amet, ad eam consul vituperata. Cum
-                assum inimicus an, his ne liber aeterno debitis. Te his iudico
-                tollit efficiendi. Eu harum volumus pri, oporteat probatus
-                disputationi id his. Mei in vidit mollis mediocrem, cum ad
-                suas democritum, ea eos eligendi nominati volutpat.
+                National ID Print Ready app makes it easy to scan both sides of your national identification card and create a pdf file with both copies on one leaf ready to print.
               </p>
-              <a href="" class="btn btn-lg btn-dark text-transform-none text-left m-3">
+              <span><h3>Benefits include</h3></span>
+                <ul>
+                  <li>Making online applications</li>
+                  <li>Keep a copy of your national id scan for future us</li>
+                  <li>Save scan costs</li>
+                </ul>
+              <a href="https://play.google.com/store/apps/details?id=ke.co.digitalatelier.nationalidscanner" class="btn btn-lg btn-dark text-transform-none text-left m-3" target="new">
                     <span class="media align-items-center">
                       <img width="25" class="d-block" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAoCAYAAABw65OnAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAWJJREFUeNrE2OENgjAQBWB0AkZwBEZwBDfRDWQD3UA30A10BJ1ANmidoF4Tm5Cmvd7Vu9rkxQj8+AI8KO2ccx1kgEyQ7fd/0wRA+LWQ22xbM4RJQPzYt0Q4BPKCrFshMIgfB0jfAlGC+H2bFogSxI8LZKWNoECMZJ1zCArESdUZQ1Ahoc69FoIDqa4zBcGB+HHinhUqggth1ZmD4ELCjbuSRnAhltKeGgQVYqNjsnWuRZQgMcBgdf4FkYNggGSdf0WkICWAi97OIogYQgWEMSw7mbEgbksPgbNgkctReo4cJS5H6iak1HeSujGxFmCQUaqilBrGkLvkw8oyamgoj21uO96QNeQBGSA3SI8c/4RYyXZwzoDVeJVzAGeNSQ0VMGlN76iAUWu2TQHcNaf8JYDfv9P8+CkBrtqfgRiAVbtaBAY4tlgayAGqa8dF5ACj+9PCmZGqHRcxX0LcuT8sIX4EGACCwMmlMqgohQAAAABJRU5ErkJggg==">
                       <span class="media-body d-block flex-basis-auto ml-3">
@@ -133,7 +161,7 @@
                     </span>
                   </a>
             </div>
-          
+          <br><br>
             <div class="col-md-4 col-xl-6 mt-5 mt-md-0">
               <div class="ui-device iphone mw-100 mx-auto" style="width: 230px;">
                 <div class="device-content">
@@ -145,6 +173,7 @@
           
           </div>
 </div>
+<br><br>
 <div class="overflow-hidden">
         <div class="container">
       
@@ -162,11 +191,9 @@
             <div class="col-lg-6 text-lg-left text-center mx-auto mt-5 mt-lg-0">
               <h1 class="display-4 mb-4">SmartBulk: AutoWeigh</h1>
               <p class="ui-company-text text-muted my-5">
-                Lorem ipsum dolor sit amet, ad eam consul vituperata. Cum
-                assum inimicus an, his ne liber aeterno debitis. Te his iudico
-                tollit efficiendi. Eu harum volumus pri, oporteat probatus
-                disputationi id his. Mei in vidit mollis mediocrem, cum ad
-                suas democritum, ea eos eligendi nominati volutpat.
+                SmartBulk: Auto weigh is our flagship web application that captures weight measurement straight from the weighting scale via a RS232 cable or a bluetooth connection.
+                The application is a web app there can run on any operating system. 
+                It can be intergrated with other existing applications.
               </p>
               <a href="#" class="btn rounded-pill btn-default md-btn-flat">Learn More →</a>
             </div>
@@ -183,20 +210,20 @@
             <div class="col-md-10 col-lg-8 col-xl-7 text-center p-0 pt-3 mx-auto">
               <h1 class="display-4 mb-3">Request for a Demo</h1>
               <div class="lead opacity-75 mb-4">
-                Lorem ipsum dolor sit amet, ad eam consul vituperata. Cum assum inimicus
-                an, his ne liber aeterno debitis. Te his iudico tollit efficiendi.
+                Looking to test our application? Dont hesitate, contact us and we will walk you through.
               </div>
             </div>
   
             <div [formGroup]="demoForm"  class="form-row pb-3">
+              
               <div class="col-md mt-2">
-                <input type="text" name="name" formControlName="name" class="form-control form-control-lg form-control-inverted" placeholder="Organisation name">
+                <input type="text" name="name" aria-label="name" id="name" formControlName="name" class="form-control form-control-lg form-control-inverted" placeholder="Organisation name">
               </div>
               <div class="col-md mt-2">
-                <input type="email" name="email" formControlName="email" class="form-control form-control-lg form-control-inverted" placeholder="E-mail">
+                <input type="email" name="email" aria-label="email" id="email" formControlName="email" class="form-control form-control-lg form-control-inverted" placeholder="E-mail">
               </div>
               <div class="col-md-2 col-lg-2 col-lg-2 mt-2">
-                <button type="button" class="btn btn-outline-white btn-lg btn-block px-0" (click)="requestDemo()">Sign Up</button>
+                <button type="button" aria-label="sign up" class="btn btn-outline-white btn-lg btn-block px-0" (click)="requestDemo()">Sign Up</button>
               </div>
             </div>
           </div>
@@ -259,17 +286,17 @@
   <div class="col-lg-6" [formGroup]="contactForm">
     <div class="form-row">
       <div class="form-group col-md-6">
-        <label class="form-label">Your name</label>
-        <input type="text" name="name" class="form-control" name="name" formControlName="name">
+        <label for="name" class="form-label">Your name</label>
+        <input type="text" name="name" class="form-control" id="name" formControlName="name">
       </div>
       <div class="form-group col-md-6">
-        <label class="form-label">Email address</label>
-        <input type="email" name="email" class="form-control" name="email" formControlName="email">
+        <label for="email" class="form-label">Email address</label>
+        <input type="email" name="email" class="form-control" id="email" formControlName="email">
       </div>
     </div>
     <div class="form-group">
-      <label class="form-label">Message</label>
-      <textarea rows="6" name="message" class="form-control" name="message" formControlName="message"></textarea>
+      <label for="message" class="form-label">Message</label>
+      <textarea rows="6" name="message" class="form-control" id="message" formControlName="message"></textarea>
     </div>
     <button type="button" class="btn btn-primary" (click)="send()">Send Message</button>
 </div>
@@ -281,19 +308,13 @@
 <nav class="footer bg-white py-2">
         <div class="container text-center py-4">
           <div class="pb-3">
-            <a href="#" class="footer-text text-large font-weight-bolder">
+            <a href="/" class="footer-text text-large font-weight-bolder" name="navbar-brand" aria-label="logo">
                     <img src="assets/img/da-logo.png" style="width: 105px;" alt="" title="" />
             </a>
           </div>
           <hr class="my-1">
-          <div class="pb-3">
-            <a href="#" class="footer-link pt-3">About Us</a>
-            <a href="#" class="footer-link pt-3 ml-4">Help</a>
-            <a href="#" class="footer-link pt-3 ml-4">Contact</a>
-            <a href="#" class="footer-link pt-3 ml-4">Terms &amp; Conditions</a>
-          </div>
       
-          <div class="col-md-9 col-lg-7 col-xl-6 px-0 mx-auto mt-3">
+          <div class="col-md-9 col-lg-7 col-xl-6 px-0 mx-auto mt-3" style="color: black;">
             2020
           </div>
         </div>

@@ -1,13 +1,13 @@
 import { Injectable } from '@angular/core';
-import { Title } from '@angular/platform-browser';
+import { Title, Meta } from '@angular/platform-browser';
 
 @Injectable()
 export class AppService {
-  constructor(private titleService: Title) {}
+  constructor(private titleService: Title,private meta: Meta) {}
 
   // Set page title
   set pageTitle(value: string) {
-    this.titleService.setTitle(`${value} - Digital Atelier`);
+    this.titleService.setTitle(`${value} - Digital Atelier (Web design experts)`);
   }
 
   // Check for RTL layout

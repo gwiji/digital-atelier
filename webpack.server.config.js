@@ -20,6 +20,7 @@ module.exports = {
   output: {
     // Puts the output at the root of the dist folder
     path: path.join(__dirname, 'dist'),
+    library: 'app',
     filename: '[name].js'
   },
   module: {

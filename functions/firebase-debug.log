@@ -1,0 +1,58 @@
+[debug] [2020-01-20T16:16:36.177Z] ----------------------------------------------------------------------
+[debug] [2020-01-20T16:16:36.182Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2020-01-20T16:16:36.183Z] CLI Version:   7.6.2
+[debug] [2020-01-20T16:16:36.183Z] Platform:      darwin
+[debug] [2020-01-20T16:16:36.183Z] Node Version:  v12.14.0
+[debug] [2020-01-20T16:16:36.185Z] Time:          Mon Jan 20 2020 19:16:36 GMT+0300 (East Africa Time)
+[debug] [2020-01-20T16:16:36.185Z] ----------------------------------------------------------------------
+[debug] [2020-01-20T16:16:36.185Z] 
+[debug] [2020-01-20T16:16:36.203Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-01-20T16:16:36.204Z] > authorizing via signed-in user
+[debug] [2020-01-20T16:16:36.204Z] [iam] checking project digital-atelier for permissions ["firebase.projects.get"]
+[debug] [2020-01-20T16:16:36.208Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-01-20T16:16:36.208Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-01-20T16:16:38.122Z] <<< HTTP RESPONSE 200
+[debug] [2020-01-20T16:16:38.344Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/digital-atelier:testIamPermissions  
+
+[debug] [2020-01-20T16:16:41.378Z] <<< HTTP RESPONSE 200
+[debug] [2020-01-20T16:16:41.380Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/digital-atelier  
+ 
+[debug] [2020-01-20T16:16:43.407Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/user/BitBucket/digital-atelier'...
+[info] 
+[debug] [2020-01-20T16:16:43.415Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/digital-atelier/webApps/-/config  
+ 
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "12"
+[info] ✔  functions: Emulator started at http://localhost:5001
+[debug] [2020-01-20T16:16:45.122Z] <<< HTTP RESPONSE 200
+[info] i  functions: Watching "/Users/user/BitBucket/digital-atelier/functions" for Cloud Functions...
+[debug] [2020-01-20T16:16:45.162Z] [worker-~diagnostic~-12eed096-7f4c-4ea4-9004-74d8b7ee0ba4]: BUSY
+[info] i  hosting: Serving hosting files from: dist/browser
+[info] ✔  hosting: Local server: http://localhost:5000
+[debug] [2020-01-20T16:16:45.767Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/user/BitBucket/digital-atelier/functions","node_version":"12.14.0"}
+[debug] [2020-01-20T16:16:45.770Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2020-01-20T16:16:45.778Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.1","resolution":"/Users/user/BitBucket/digital-atelier/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-20T16:16:45.781Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/user/BitBucket/digital-atelier/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-20T16:16:45.783Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/user/BitBucket/digital-atelier/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  Error: Cannot find module 'require("./server/main")'
+Require stack:
+- /Users/user/BitBucket/digital-atelier/functions/dist/server.js
+- /Users/user/BitBucket/digital-atelier/functions/lib/index.js
+- /usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:797:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:690:27)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at webpackUniversalModuleDefinition (/Users/user/BitBucket/digital-atelier/functions/dist/server.js:3:28)
+    at Object.<anonymous> (/Users/user/BitBucket/digital-atelier/functions/dist/server.js:10:3)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[debug] [2020-01-20T16:16:46.087Z] [worker-~diagnostic~-12eed096-7f4c-4ea4-9004-74d8b7ee0ba4]: exited
+[debug] [2020-01-20T16:16:46.087Z] [worker-~diagnostic~-12eed096-7f4c-4ea4-9004-74d8b7ee0ba4]: FINISHED
